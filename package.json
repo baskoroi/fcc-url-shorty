@@ -1,0 +1,18 @@
+{
+  "name": "fcc-url-shorty",
+  "version": "1.0.0",
+  "description": "Node.js URL shortener microservice (FreeCodeCamp)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Baskoro Indrayana <baskoroindrayana@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "mongodb": "^2.2.9",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  }
+}
