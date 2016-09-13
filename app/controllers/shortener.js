@@ -15,7 +15,7 @@ exports.shortenUrl = function(req, res) {
             if (url) {
                 return res.json({
                     "original_url": url.originalUrl,
-                    "short_url": 'https://bask-shorty-url.herokuapp.com/' + url.shortcode
+                    "short_url": 'https://bask-url-shorty.herokuapp.com/' + url.shortcode
                 });
             } else {
                 var url = new Url({
@@ -26,7 +26,7 @@ exports.shortenUrl = function(req, res) {
                     if (err) {
                         return console.error('Cannot save URL:', err);
                     } else {
-                        var shortUrl = 'https://bask-shorty-url.herokuapp.com/' + url.shortcode;
+                        var shortUrl = 'https://bask-url-shorty.herokuapp.com/' + url.shortcode;
                         return res.json({
                             "original_url": url.originalUrl,
                             "short_url": shortUrl
