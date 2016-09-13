@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 module.exports = function() {
-    var dbUrl = 'mongodb://localhost:27017/urlshorty';
+    var dbUrl = process.env.MONGOLAB_URI;
     mongoose.connect(dbUrl);
 
     var db = mongoose.connection;
@@ -9,6 +9,6 @@ module.exports = function() {
     db.once('open', function() {
         console.log('Connected to DB!');
     });
-    
+
     require('../app/models/Url.js');
 };
