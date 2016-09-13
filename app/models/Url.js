@@ -5,12 +5,11 @@ var urlSchema = mongoose.Schema({
     originalUrl: String,
     shortUrl: String
 });
-urlSchema.methods.showUrls = function() {
-    var log = 'You can access ' +
-        this.originalUrl + ' just by typing: ' + 
-        this.shortUrl;
-    console.log(log);
-};
+
+/*urlSchema.methods.getOriginalUrl = function() {
+    return this.originalUrl;
+}
+*/
 var Url = mongoose.model('Url', urlSchema);
 
 module.exports = Url;

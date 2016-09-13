@@ -9,6 +9,6 @@ module.exports = function() {
     db.once('open', function() {
         console.log('Connected to DB!');
     });
-
+    
     require('../app/models/Url.js');
 };
