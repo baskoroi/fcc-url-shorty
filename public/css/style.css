@@ -1,0 +1,15 @@
+header, footer {
+    text-align: center;
+}
+
+header h2 {
+    font-size: 16pt;
+}
+
+code, footer {
+    background-color: #303030;
+}
+
+code {
+    color: #a8ff8e;
+}

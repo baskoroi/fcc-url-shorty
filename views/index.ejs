@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Shorty</title>
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+    <div class="container-fluid">
+        
+        <header>
+            <h1>URL Shorty</h1>
+            <h2>A URL shortener Microservice. [<a href="https://github.com/baskoroi/fcc-url-shorty" target="_blank">GitHub</a>]</h2>
+        </header>
+
+        <div class="well">
+            <h2>User Stories</h2>
+            <ul>
+                <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+                <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+            </ul>
+        </div>
+
+        <section>
+            <h2>Example usage:</h2>
+
+            <h3>Short URL creation</h3>
+            <code>https://bask-url-shorty.herokuapp.com/new/<em>[your url here]</em></code><br />
+            <code>https://bask-url-shorty.herokuapp.com/new/http://www.youtube.com</code>
+
+            <h3>JSON response after URL creation</h3>
+            <code><%= '{ ' + '"original_url": "http://www.youtube.com", "short_url": "https://bask-url-shorty.herokuapp.com/2780"' + ' }' %></code>
+
+            <h3>Usage of short URL</h3>
+            <code>https://bask-url-shorty.herokuapp.com/2780</code><br />
+            <p>And you will then be redirected to <code>http://www.youtube.com</code></p>
+        </section>
+
+        <footer>
+            <p>Developed by: <a href="https://github.com/baskoroi" target="_blank">Baskoro Indrayana</a>.</p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
