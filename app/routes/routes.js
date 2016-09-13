@@ -6,4 +6,6 @@ module.exports = function(app) {
     });
 
     app.get('/new/:protocol*', shortener.shortenUrl);
+
+    app.get('/*', shortener.redirect);
 };
