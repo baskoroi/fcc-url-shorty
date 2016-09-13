@@ -4,10 +4,8 @@ By: Baskoro Indrayana - <baskoroindrayana@outlook.com>
 
 ## Description
 
-This is a URL shortener microservice I developed while learning in FreeCodeCamp.
+This is a URL shortener microservice I developed while learning in FreeCodeCamp. It is primarily written in Node.js and Express.
 
-## TODO
+Demo: <https://bask-url-shorty.herokuapp.com>
 
-- In this README: 
-    - Write in short about how you write this microservice.
-    - Write how to use it.
+## TODO (Write if any)
