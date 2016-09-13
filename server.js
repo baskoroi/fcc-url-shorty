@@ -1,17 +1,8 @@
-var path = require('path');
+var mongoose = require('./config/mongoose.js');
+var express = require('./config/express.js');
 
-var express = require('express');
+var db = mongoose();
 var app = express();
-
-// EXPRESS CONFIG
-
-var routes = require('./app/routes/routes.js');
-
-app.use(express.static(path.join(__dirname, 'public')));
-app.set('views', './views');
-app.set('view engine', 'ejs');
-
-routes(app);
 
 var PORT = process.env.PORT || 8080;
 app.listen(PORT, function() {
